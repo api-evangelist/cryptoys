@@ -1,7 +1,28 @@
 aid: cryptoys
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cryptoys.png
 name: Cryptoys
-description: Cryptoys is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Cryptoys is an Andreessen Horowitz (a16z) backed Web3 digital collectibles
+  company that lets fans buy, own, and play with blockchain-based interactive
+  toys featuring licensed characters from Disney and Star Wars alongside
+  original IP. Products are sold as blind boxes containing randomized digital
+  toys across multiple power tiers and rarity levels. The company has since
+  rebranded and now operates its consumer experience as Digitoys at
+  digitoys.io, while retaining its identity account service at auth.cryptoys.com.
+  Cryptoys is a consumer-facing collectibles platform and does not currently
+  publish a public developer API, SDK, or developer portal; this profile
+  captures its public web and identity surface for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/cryptoys/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,34 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: Digitoys (digitoys.io)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Web3
+- NFT
+- Digital Collectibles
+- Blockchain
+- Gaming
+- Toys
+- Consumer
 apis: []
+common:
+- type: Website
+  url: https://digitoys.io
+- type: Support
+  url: https://discord.gg/digitoyshq
+- type: DomainSecurity
+  url: security/cryptoys-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
